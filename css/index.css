@@ -1,0 +1,208 @@
+main {
+    width: 100%;
+    height: 100vh ;
+    background-color: #BFBBAE;
+    background-image: url(../img/mo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+       
+}
+main .mainintro h1{
+    font-size: 76px;
+    line-height: 106px;
+    color:  #563B3B;
+}
+main .mainintro p{
+    font-size: 30px;
+    color:  #421e1e  ;
+}
+/*category section*/
+.index-category{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.index-category p{
+    color: #111;
+    text-align: center;
+    padding-bottom: 40px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 28px;
+
+}
+.index-category-box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(10, 12, 11);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.index-category-box:nth-child(2){
+    background-image: url(../img/webdevelop.jpg);
+}
+.index-category-box:nth-child(3){
+    background-image: url(../img/python.jpg);
+}
+.index-category-box:nth-child(4){
+    background-image: url(../img/js.jpg);
+}
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    transition: all ease-in-out 200ms;
+}
+.index-category-box:hover .dark-overlay{
+    opacity: 0;
+}
+.index-category-box h3{
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    text-shadow: -2px 2px 4px black;
+    z-index: 100;
+}
+/* About section */
+.index-about{
+    width: 100%;
+    padding: 60px 0;
+    background-color:  #7E7863;
+    
+}
+.index-about-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+.index-about-img img{
+    width: 200px;
+    height: 300px;
+    border-radius: 200px;
+}
+.index-about-text{
+    flex-basis: 455px;
+}
+.index-about-text p{
+    padding: 20px 0;
+}
+.index-about-text a{
+    
+    font-size: 18px;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    background-color: aqua;
+    padding: 0 20px;
+    width: fit-content;
+}
+.index-about-text a:hover{
+    background-color: #563B3B;
+}
+.index-about-skill{
+    flex-basis: 350px;
+}
+.index-about-skill-bar{
+    width: calc(100%-8px);
+    height: 20px;
+    border: 4px solid #563B3B;
+}
+.index-about-skill-bar-fill{
+    
+    height: 100%;
+    background-color: #772c2c;
+}
+
+.htmlcss{
+    width: 50%;  
+}
+.Py{
+    width: 85%;  
+}
+.js{
+    width: 20%;  
+}
+.des{
+    width: 20%;  
+}
+/*mobile version*/
+@media only screen and (max-width: 600px) {
+    main{
+        align-items: flex-end;
+        
+    }
+    main .mainintro{
+        padding-bottom: 8vh;
+        text-align: center;
+    }
+    main .mainintro h1{
+        font-size: 50px;
+        padding-left: 10px;
+        line-height: 1.25;
+        
+    }
+    main .mainintro p{
+        text-align: center;
+        padding: 0 10%;
+        font-size: 30px;
+        color: #e0ddd2;
+    }
+    /*category section*/
+    .index-category{
+        padding: 40px 0;
+        row-gap: 20px;
+    
+    }
+    .index-category p{
+        padding-bottom: 20px;
+    }
+    .index-category-box{
+        width: calc(100%-20px);
+        height: 160px;
+    }
+    /*about section*/
+    
+    .index-about-flex{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        display: flex;
+    }
+    
+    .index-about-text{
+        flex-basis: 455px;
+        font-size: 20px;
+    }
+    .index-about-text p{
+        padding: 20px 0;
+        font-size: 18px;
+    }
+    .index-about-text a{
+        
+        font-size: 20px;
+        display: block;
+        height: 36px;
+        line-height: 36px;
+        background-color: aqua;
+        padding: 0 20px;
+        width: fit-content;
+    }
+   
+}

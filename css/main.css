@@ -1,0 +1,133 @@
+:root{
+    --site-color-01: rgb(118, 153, 219) ;
+}
+body{
+    background-color: rgb(29, 27, 27);
+    
+}
+
+
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../img/instagram-color.jpg) url(../img/github.png);
+}
+.wrapper-main{
+    width: 1100px;
+    margin: 0 auto;
+
+}
+h1 {
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    
+}
+a{
+    font-size: 14px;
+    line-height: 18px;
+    color:#fff;
+    cursor: pointer;
+}
+.headermain{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #BEBEBC;
+    display: flex; 
+    justify-content: space-between;
+    z-index: 1000; 
+}
+/*.headermain-logo{
+    width: fit-content;
+    height: 100%;
+    padding-left: 60px;
+    display: flex;}s*/
+
+.headermain-nav{
+    width: fit-content;
+    height: 100%;
+}
+.headermain-nav ul{
+    list-style: none;
+    margin-left: 30px;
+
+}
+.headermain-nav ul li{
+    display: inline;
+    float: left;
+    
+}
+.headermain-nav ul li a{
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 60px;
+    color: black;
+}
+.header-main-sm{
+    width: 120px;
+    height: 100%;
+    padding: 60%;
+}
+/*FOOTER*/
+.footer-main{
+    width: 100%;
+    padding: 60px 0  100px;
+}
+.footer-main-flex{
+    display:flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+.footer-getintouch{
+    padding: 10px 20px;
+    margin: 40px 0 60px;
+    border: 4px solid #fff;
+    font-weight: 600;
+    transition: all ease-in-out 200ms;
+}
+.footer-getintouch:hover{
+    border: 2px solid teal;
+}
+.footer-sitemap{
+    flex-basis: 100%;
+    display: flex;
+}
+.footer-sitemap ul:nth-child(1), 
+.footer-sitemap ul:nth-child(2){
+    flex-basis: 180px;   
+}
+.footer-sitemap ul:nth-child(3){
+    flex-basis: 340px;   
+}
+.footer-sitemap p{
+    text-transform: uppercase;
+}
+/*mobile version*/
+@media only screen and (max-width: 600px) {
+    
+    .wrapper-main{
+        width: calc(100%-20px);
+    }
+    .headermain-nav{
+        display: none;
+    }
+}
+
